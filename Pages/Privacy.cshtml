@@ -1,0 +1,79 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Rettigheter";
+}
+<body style="background-color: #EAE7DC;">
+    <div class="text-center">
+        <h1 class="display-4" style="color: #E85A4F;">@ViewData["Title"]</h1>
+    </div>
+    <hr />
+
+    <!-- Modal for å vise bilde ved klikk -->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body bg-dark">
+                    <button type="button" class="close text-light" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <img src="" class="imagepreview" alt="Alternate Text" style="width: 100%;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <!-- Bilde -->
+        <div class="col-xl-6 col-lg-6 col-12 my-2">
+            <div class="container-fluid my-auto">
+                <a href="#" class="pop">
+                    <img src="~/Images/700x700.png" alt="Alternate Text" class="img-fluid img mx-auto my-auto d-block border shadow rounded" />
+                </a>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-12">
+            <div class="row">
+                <!-- Om nettside -->
+                <div class="col-xl-6 col-lg-6 col-12 ">
+                    <h4 style="color: #E98074;">Personvern</h4>
+                    <p>
+                        Det lagres ingen data om den individuelle bruker. Data på denne nettsiden blir ikke solgt videre eller brukt i noen kommersiell form.
+                        Data som lagres på denne nettsiden er server data (svartid, data sendt/motatt eks.). Slik data kan på ingen måte spores tilbake til bruker.
+                    </p>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-12 ">
+                    <h4 style="color: #E98074;">Om nettsiden</h4>
+                    <p>
+                        Nettsiden er et prosjekt laget av Sebastian Soleng Borge.
+                        Prosjektet er laget for å kunne vise kunnskaper innenfor ASP.Net og webutvikling. Nettsiden hostes ved hjelp av Azure, på Microsoft sine servere.
+                        Prosjektet har vært en læringsoppgave for å bedre kunne bruke Visual Studio og webteknologier som f.eks. bootstrap.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-6 col-lg-6 col-12 ">
+                    <h4 style="color: #E98074;">Kildelisting:</h4>
+                    <ul class="text-decoration-none list-unstyled">
+                        <li> <a href="https://www.flickr.com/photos/75487768@N04/6804719779/" target="_blank"> Fjell bilde </a></li>
+
+                        <li> <a href="https://www.flickr.com/photos/chrisaitken/6331318875" target="_blank"> Høst bilde </a></li>
+
+                        <li><span class="d-inline-block dpop" data-toggle="popover" data-placement="bottom" data-content="Opprinnelig kilde eksisterer ikke lenger">
+                                <a href="" class="btn disabled p-0 m-0">Solnedgang bilde </a> 
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-12 ">
+
+                </div>
+            </div>
+    </div>
+
+
+
+</body>

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sebastian</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!--
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow  mb-3">
+         -->
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow bg-white mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Forside</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+
+                        <!-- Gammel home list element1
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>-->
+
+                        <li class="nav-item">
+                            <span class="d-inline-block dpop" data-toggle="popover" data-placement="bottom" data-content="Kommer snart">
+                                <a class="nav-link disabled" asp-area="" asp-page="">Prosjekter</a>
+                            </span>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Rettigheter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted bg-white">
+        <div class="container-fluid h-100">
+            <div class="float-left">
+                &copy; 2020 - <a class="text-decoration-none" asp-area="" asp-page="/Privacy">Rettigheter</a>
+            </div>
+
+            <div class="float-right">
+                <a href="mailto:sebbi0606@gmail.com?Subject=Kontakt%20nettside" target="_top" class="font-weight-bold mx-2 text-decoration-none text-dark" style="font-size:30px;"><i class="material-icons">email</i></a>
+                <a href="https://www.facebook.com/sebastian.s.borge" target="_blank" class="font-weight-bold mx-2 text-decoration-none text-dark" style="font-size:30px;">f</a>
+                <a href="https://www.linkedin.com/in/sebastian-soleng-borge-098670189/" target="_blank" class="font-weight-bold mx-2 text-decoration-none text-dark" style="font-size:30px;">in</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
